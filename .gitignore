@@ -31,5 +31,5 @@ build/
 .vscode/
 src/main/resources/static/
 src/main/resources/templates/
-
+src/main/java/com/enojen/Algo.java
 !/src/main/java/com/enojen/bookishgiggle/api/ProjectVersionedApi.java
