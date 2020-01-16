@@ -2,7 +2,7 @@ HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
-**/src/test/**
+!**/src/test/**
 
 ### STS ###
 .apt_generated
@@ -32,3 +32,4 @@ build/
 src/main/resources/static/
 src/main/resources/templates/
 src/main/java/com/enojen/Algo.java
+src/test/java/TestJunit.java
