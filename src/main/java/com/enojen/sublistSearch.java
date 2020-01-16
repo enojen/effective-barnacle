@@ -3,12 +3,12 @@ package com.enojen;
 public class sublistSearch {
     public static void main(String[] args) {
 
-        Algo.Node a = newNode(1);
+        Node a = newNode(1);
         a.next = newNode(2);
         a.next.next = newNode(3);
         a.next.next.next = newNode(4);
 
-        Algo.Node b = newNode(1);
+        Node b = newNode(1);
         b.next = newNode(2);
         b.next.next = newNode(1);
         b.next.next.next = newNode(2);
@@ -26,22 +26,22 @@ public class sublistSearch {
             System.out.println("not inside");
     }
 
-    static Algo.Node newNode(int key) {
-        Algo.Node temp = new Algo.Node();
+    static Node newNode(int key) {
+        Node temp = new Node();
         temp.data = key;
         temp.next = null;
         return temp;
     }
 
-    static void print(Algo.Node node) {
+    static void print(Node node) {
         while (node != null) {
             System.out.printf("%d", node.data);
             node = node.next;
         }
     }
 
-    static boolean findlist(Algo.Node first, Algo.Node second) {
-        Algo.Node ptr1 = first, ptr2 = second;
+    static boolean findlist(Node first, Node second) {
+        Node ptr1 = first, ptr2 = second;
         if (first == null && second == null) {
             return true;
         }
@@ -77,7 +77,7 @@ public class sublistSearch {
 
     static class Node {
         int data;
-        Algo.Node next;
+        Node next;
     }
 
 }
